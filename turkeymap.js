@@ -217,7 +217,8 @@ function loadColorData(){
 		{"key":"Bursa","value":2787539},
 		{"key":"Çanakkale_a","value":511790},
 		{"key":"Çanakkale_b","value":511790},
-		{"key":"Çankırı","value":183550},
+		{"key":"Çankırı_a","value":183550},
+		{"key":"Çankırı_b","value":183550},
 		{"key":"Çorum","value":527220},
 		{"key":"Denizli","value":978700},
 		{"key":"Diyarbakır","value":.1635048},
@@ -320,6 +321,8 @@ function triggerWhenCityClick(selected){
         cityName=cityCode.replace("_a","").replace("_b","");
         cityCount=cityArry[cityCode];
         document.getElementById("info").innerHTML = cityName+":"+cityCount+" kişidir";
+     }else{
+        document.getElementById("info").innerHTML = "";     	
      }
 
 }
