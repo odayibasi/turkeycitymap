@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>2014 Türkiye Nüfusu</title>
+	<meta name="description" content="Turkiyenin Şehirlerini ZoomIn/ZoomOut">
+	<meta name="keywords" content="Türkiye, Şehirler, ColorMap, HeatMap, ZoomIn, ZoomOut">
+	<meta name="author" content="Onur Dayıbaşı">
+	<meta charset="UTF-8">
+
+<style>
+.centered {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
+}
+
+.centeredtop {
+  position: fixed;
+  top: 80px;
+  left: 50%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
+}
+
+.Lato-normal-400 {
+    font-family: 'Lato' !important;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.title {
+    font-size: 64px;
+    line-height: 1.1em;
+    margin-bottom: 20px;
+}
+
+.paragraf {
+    font-size: 20px;
+    line-height: 1.1em;
+    margin-bottom: 20px;
+    color:#fff;
+}
+
+
+
+</style>
+
+
+
+</head>
+
+
+<body>  
+	<div class="title Lato-normal-400 centeredtop">2014 Türkiye Nüfusu</div>
+	<div class="centered" id="map"></div>
+	<div class="paragraf Lato-normal-400 centered" id="info"></div>
+</body>
+
+<script src="d3.v3.min.js"></script>
+<script src="turkeymap.js"></script>
+</html>
